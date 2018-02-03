@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: 'AWS::Serverless-2016-10-31'
+Description: aws sam serverless java seed simple example
+Resources:
+  GetFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.serverless.example.function.HelloWorld
+      Runtime: java8
+      CodeUri: ./target/aws-sam-java-seed-ex-simple-1.0.jar
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get

@@ -1,0 +1,14 @@
+<archetype>
+  <id>aws-sam-java-seed-simple</id>
+  <sources>
+    <source>src/main/java/function/HelloWorld.java</source>
+    <source>src/main/java/model/ServerlessInput.java</source>
+    <source>src/main/java/model/ServerlessOutput.java</source>
+  </sources>
+  <resources>
+    <resource>template.yaml</resource>
+  </resources>
+  <testSources>
+    <source>src/test/java/HelloWorldTest.java</source>
+  </testSources>
+</archetype>
